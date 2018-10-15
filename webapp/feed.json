@@ -1,0 +1,23 @@
+{
+	"EntryCollection" : [{
+		"Author" : "Omar",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Request",
+		"Date" : "Oct 10 2018",
+		"Text" : "I also feel headache and shivering."
+	}, 
+	
+	{
+		"Author" : "Daniel Thinking",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Reply",
+		"Date" : "Oct 10 2018",
+		"Text" : "Do you have any other symptoms?"
+	}, {
+		"Author" : "Omar",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Request",
+		"Date" : "Oct 10 2018",
+		"Text" : "I have been suffering from fever since yesterday."
+	}]
+}

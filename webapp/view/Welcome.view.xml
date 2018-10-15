@@ -1,0 +1,34 @@
+<mvc:View controllerName="DrThinkingPatient.controller.Welcome" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true" 
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page 
+				title="{i18n>title}"
+				showHeader="false" >
+					<content>
+						<VBox fitContainer="true" 
+							justifyContent="Center" 
+							alignItems="Center" 
+							alignContent="Center">
+							<items>
+								<Image 
+									src="img/dr_thinking_logo.png" 
+									width="20%"
+									class="center">
+								</Image>
+								<Text text="Welcome to Dr. Thinking" class="sapUiMediumMarginBottom"/>
+								<Input placeholder="user name / e-mail" required="true"/>
+								<Input placeholder="passwort" required="true"/>
+								<Button width="12rem" text="login" type="Emphasized" press="onPressLogin"/>
+								<Text text="or"/>
+								<Button width="12rem" text="register" press="onPressRegister"/>
+							</items>
+						</VBox>	
+					</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

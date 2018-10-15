@@ -1,0 +1,59 @@
+<mvc:View xmlns:l="sap.ui.layout" 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:tnt="sap.tnt"
+	controllerName="DrThinkingPatient.controller.Chat">
+	<App id="app">
+		<Page 
+			title="{i18n>title}"
+			showHeader="false" >
+			<content>
+				<Panel>
+							<List headerText="Chatting list">
+								<items>
+									<ObjectListItem title="Omar" type="Active" press="onListItemPress" icon="sap-icon://wounds-doc">
+										<firstStatus icon="sap-icon://email">
+											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
+										</firstStatus>
+										<attributes>
+											<ObjectAttribute text="status:offline" />
+										</attributes>
+									</ObjectListItem>
+									<ObjectListItem title="Anh" type="Active" press="onListItemPress"
+									icon="sap-icon://wounds-doc">
+										<firstStatus>
+											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
+										</firstStatus>
+										<attributes>
+											<ObjectAttribute text="status:online"/>
+											
+										</attributes>
+									</ObjectListItem>
+									<ObjectListItem title="Qian" type="Active" press="onListItemPress"
+										icon="sap-icon://wounds-doc">
+										<firstStatus>
+											<ObjectStatus text="Oct 11" icon="sap-icon://email"/>
+											
+										</firstStatus>
+										<attributes>
+											<ObjectAttribute text="status:online"/>
+										</attributes>
+									</ObjectListItem>
+									<ObjectListItem title="Yumna" type="Active" press="onListItemPress"
+										icon="sap-icon://wounds-doc">
+										<firstStatus>
+											<ObjectStatus text="Oct 10" icon="sap-icon://email"/>
+										
+										</firstStatus>
+										<attributes>
+											<ObjectAttribute text="status:offline"/>
+										</attributes>
+									</ObjectListItem>
+								</items>
+							</List>
+				</Panel>
+			</content>
+		</Page>
+	</App>
+</mvc:View>

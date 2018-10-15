@@ -1,0 +1,95 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="DrThinkingPatient.controller.Appointment">
+	<App id="app">
+		<Page showHeader="false">
+			<content>
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" intro="profile"
+					title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true" markFlagged="true"
+					markFavorite="true" numberState="Success" backgroundDesign="Translucent">
+					<attributes>
+						<ObjectAttribute title="Age:28"/>
+						<ObjectAttribute title="City:Mannheim"/>
+						<ObjectAttribute title="Email:Dienialthinking @yahoo.com"/>
+					</attributes>
+					<statuses>
+						<ObjectStatus title="Rating" state="Warning" icon="sap-icon://favorite"/>
+					</statuses>
+					<headerContainer>
+						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter icon="sap-icon://future" count="2">
+									<List items="{/p_info}" headerText=" Upcoming appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_1}"/>
+													<ObjectAttribute text="Illness:{illness_1}"/>
+													<ObjectAttribute text="Date:{date_1}"/>
+													<ObjectAttribute text="Time:{Time_1}"/>
+													
+												</attributes>
+											</ObjectListItem>
+											
+										</items>
+										
+									</List>
+									
+										<List items="{/p_info}" headerText=" Upcoming appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_2}"/>
+													<ObjectAttribute text="Illness:{illness_2}"/>
+													<ObjectAttribute text="Date:{date_2}"/>
+													<ObjectAttribute text="Time:{Time_2}"/>
+													
+												</attributes>
+								
+											</ObjectListItem>
+											
+										</items>
+									</List>
+								</IconTabFilter>
+								
+								<IconTabFilter icon="sap-icon://history" count="2">
+									<List items="{/p_info}" headerText="Previous appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_3}"/>
+													<ObjectAttribute text="Illness:{illness_3}"/>
+													<ObjectAttribute text="Date:{date_3}"/>
+													<ObjectAttribute text="Time:{Time_3}"/>
+													
+												</attributes>
+								
+											</ObjectListItem>
+										</items>
+									</List>
+									
+									<List items="{/p_info}" headerText="Previous appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_4}"/>
+													<ObjectAttribute text="Illness:{illness_4}"/>
+													<ObjectAttribute text="Date:{date_4}"/>
+													<ObjectAttribute text="Time:{Time_4}"/>
+													
+												</attributes>
+								
+											</ObjectListItem>
+										</items>
+									</List>
+								</IconTabFilter>
+									
+								
+							</items>
+						</IconTabBar>
+					</headerContainer>
+				</ObjectHeader>
+				
+			</content>
+		</Page>
+	</App>
+</mvc:View>

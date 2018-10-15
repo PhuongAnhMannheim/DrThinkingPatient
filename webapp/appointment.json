@@ -1,0 +1,33 @@
+{
+	"p_info" : [
+		{
+		"Name_1" : "Omar Erafik",
+		"illness_1" : "Sore throat and runny nose",
+		"date_1" : "23/10/2018",
+		"Time_1" : "14:00"
+	}],
+	
+	"p_info1" :[
+ {
+ "Name_2" : "Anh Le",
+		"illness_2" : "Mild headache and Nausea",
+		"date_2" : "23/10/2018",
+		"Time_2" : "16:00"
+ }],
+	
+	"p_info2" :[	
+{
+		"Name_3" : "Qian Xia",
+		"illness_3" : "Mild fever",
+		"date_3" : "8/10/2018",
+		"Time_3" : "10:00"
+	}],
+	"p_info3" :[
+{
+		"Name_4" : "Yomna Osman ",
+		"illness_4" : "Ear Pain",
+		"date_4" : "7/10/2018",
+		"Time_4" : "12:00"
+	}]
+	
+}
