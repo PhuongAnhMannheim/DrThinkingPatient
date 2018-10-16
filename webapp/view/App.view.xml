@@ -1,14 +1,12 @@
-<mvc:View
-	controllerName="DrThinkingPatient.controller.App"
-	xmlns="sap.m"
+<mvc:View controllerName="DrThinkingPatient.controller.App" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
 	xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true">
+	displayBlock="true" xmlns="sap.m">
 	<App id="app">
 		<pages>
-			<Page
-				showHeader="false" >
+			<Page title="{i18n>title}">
 				<content>
-					
+					<Text text="Hallo"></Text>
 				</content>
 			</Page>
 		</pages>
