@@ -43,41 +43,50 @@
 										ariaLabelledBy="Title1" >
 									<f:content>
 										<Label text="First Name"></Label>
-										<Input value="{firstname}" placeholder="Daniel"></Input>
+										<Input value="{firstname}" placeholder="Isa"></Input>
 										<Label text="Last Name"></Label>
-										<Input value="{lastname}" placeholder="Thinking"></Input>
+										<Input value="{lastname}" placeholder="Hahn"></Input>
 										<Label text="Date of Birth"></Label>
 										<Input value="{dateofbirth}" type="Date"></Input>
 										<Label text="Email"></Label>
-										<Input value="{email}" placeholder="d.thinking@doctors.com"></Input>
+										<Input value="{email}" placeholder="i.hahn@patient.com"></Input>
 										<Label text="Password"></Label>
 										<Input value="{password}" type="Password"></Input>
 										<Label text="Re-enter Password"></Label>
 										<Input value="{password2}" type="Password"></Input>
-										<Select id="Specialty" selectedKey="{specialty}">
-											<items>
-												<core:Item text="Allergists" key="Allergists"/>
-												<core:Item text="Anesthesiologists" key="Anesthesiologists"/>
-												<core:Item text="Dermatologists" key="Dermatologists"/>
-												<core:Item text="Colon" key="Colon"/>
-												<core:Item text="Endocrinologists" key="Endocrinologists"/>
-												<core:Item text="Gastroenterologists" key="Gastroenterologists"/>
-												<core:Item text="Otolaryngologsts" key="Otolaryngologists"/>
-												<core:Item text="others" key="others"/>
-											</items>
-										</Select>
 									</f:content>
 								</f:SimpleForm>
-								<Text text="Please upload your licence to practise for verification"/>
-								<u:FileUploader
-									id="fileUploader"
-									name="myFileUpload"
-									uploadUrl="upload/"
-									tooltip="Upload your file to the local server"
-									uploadComplete="handleUploadComplete"/>
-								<Button id="BtnUpload"
-									text="upload and verify"
-									press="handleUploadPress"/>
+										<Text text="In case you are in need of doctors and medical facilities"></Text>
+								<f:SimpleForm id="SimpleFormAdress"
+										editable="true"
+										layout="ResponsiveGridLayout"
+										labelSpanXL="4"
+										labelSpanL="3"
+										labelSpanM="4"
+										labelSpanS="12"
+										adjustLabelSpan="false"
+										emptySpanXL="0"
+										emptySpanL="4"
+										emptySpanM="0"
+										emptySpanS="0"
+										columnsXL="2"
+										columnsL="1"
+										columnsM="1"
+										singleContainerFullSize="false"
+										ariaLabelledBy="Title1" >
+									<f:content>
+										<Label text="Street name"></Label>
+										<Input value="{street}"></Input>
+										<Label text="House number"></Label>
+										<Input value="{housenumber}"></Input>
+										<Label text="Postal code"></Label>
+										<Input value="{postalcode}"></Input>
+										<Label text="City"></Label>
+										<Input value="{city}"></Input>
+										<Label text="Country"></Label>
+										<Input value="{coutry}"></Input>
+									</f:content>
+								</f:SimpleForm>
 							<Button width="12rem" text="register" press="onPress"/>
 						</items>
 					</VBox>	
