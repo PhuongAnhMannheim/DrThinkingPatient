@@ -1,0 +1,135 @@
+<mvc:View controllerName="DrThinkingPatient.controller.Home" 
+	xmlns:tnt="sap.tnt"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true" 
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader="false">
+				<tnt:ToolPage id="toolPage">
+					<tnt:header>
+						<tnt:ToolHeader>
+							<Button id="sideNavigationToggleButton"
+								icon="sap-icon://menu2"
+								type="Transparent"
+								press="onSideNavButtonPress">
+							</Button>
+							<ToolbarSpacer></ToolbarSpacer>
+							<tnt:ToolHeaderUtilitySeparator />
+							<ToolbarSpacer></ToolbarSpacer>
+							<Text id="Header" text="Dr. Thinking"></Text>
+							<ToolbarSpacer></ToolbarSpacer>
+							<Button text="Daniel Thinking" type="Transparent" press="handleUserNamePress"></Button>
+						</tnt:ToolHeader>
+					</tnt:header>
+				<tnt:sideContent>
+			<tnt:SideNavigation expanded="true"
+								itemSelect="onItemSelect">
+				<tnt:NavigationList items="{path: '/navigation'}">
+					<tnt:NavigationListItem text="{title}"
+											icon="{icon}"
+											enabled="{enabled}"
+											expanded="{expanded}"
+											items="{items}"
+											key="{key}">
+						<tnt:NavigationListItem text="{title}"
+												key="{key}"
+												enabled="{enabled}">
+						</tnt:NavigationListItem>
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+				<tnt:fixedItem>
+					<tnt:NavigationList items="{path: '/fixedNavigation'}">
+						<tnt:NavigationListItem text="{title}"
+												icon="{icon}">
+						</tnt:NavigationListItem>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+				<tnt:mainContents>
+					<NavContainer id="pageContainer">
+						<pages>
+							<ScrollContainer id="home"
+											 height="100%">
+									<VBox fitContainer="true" 
+									justifyContent="Center" 
+									alignItems="Center" 
+									alignContent="Center">
+									<items>
+										<Image 
+											src="img/dr_thinking_logo.png" 
+											width="20%"
+											class="center">
+										</Image>
+											<Button 
+												id="BtnProfile" 
+												icon="sap-icon://doctor"
+												text="View and Maintain Profile" 
+												press="onPressProfile" 
+												width="250px" 
+												class="cube"></Button>
+											<Button id="BtnAppointments" 
+												icon="sap-icon://appointment-2"
+												text="View Appointments" 
+												press="onPressAppointments" 
+												width="250px" 
+												class="cube"></Button>
+											<Button 
+												id="BtnChat" 
+												text="View Conversations" 
+												icon="sap-icon://discussion"
+												press="onPressChats" 
+												width="250px" 
+												class="cube"></Button>
+											<Button 
+												id="BtnSearch" 
+												icon="sap-icon://employee-lookup"
+												text="Search for Available Patients" 
+												press="onPressSearch" 
+												width="250px" 
+												class="cube"></Button>
+											<Button 
+												id="BtnRating" 
+												icon="sap-icon://favorite"
+												text="Rating" 
+												press="onPressRate" 
+												width="250px" 
+												class="cube"></Button>
+									</items>
+								</VBox>	
+							</ScrollContainer>
+							<ScrollContainer id="profile"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								
+								<mvc:XMLView viewName="DrThinkingPatient.view.Profile"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="appointments"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Appointment"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="chat"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Chat"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="search"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Search"></mvc:XMLView>
+							</ScrollContainer>
+						</pages>
+					</NavContainer>
+					</tnt:mainContents>
+				</tnt:ToolPage>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

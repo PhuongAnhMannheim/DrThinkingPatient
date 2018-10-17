@@ -82,12 +82,86 @@
 					"pattern": "",
 					"name": "appWelcome",
 					"target": "welcome"
+				},
+				{
+					"pattern": "home",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "profile",
+					"name": "profile",
+					"target": "profile"
+				},
+				{
+					"pattern": "appointment",
+					"name": "appointment",
+					"target": "appointment"
+				},
+				{
+					"pattern": "chat",
+					"name": "chat",
+					"target": "chat"
+				},
+				{
+					"pattern": "search",
+					"name": "search",
+					"target": "search"
+				},
+				{
+					"pattern": "register",
+					"name": "register",
+					"target": "register"
+				},
+				{
+					"pattern": "match",
+					"name": "match",
+					"target": "match"
+				},
+				{
+					"pattern": "chatroom",
+					"name": "chatroom",
+					"target": "chatroom"
+				},
+				{
+					"pattern": "rating",
+					"name": "rating",
+					"target": "rating"
 				}
+				
 			],
 			"targets": {
 				"welcome": {
 					"viewName": "Welcome"
+				},
+				"home": {
+					"viewName": "Home"
+				},
+				"profile": {
+					"viewName": "Profile"
+				},
+				"appointment": {
+					"viewName": "Appointment"
+				},
+				"chat": {
+					"viewName": "Chat"
+				},
+				"search": {
+					"viewName": "Search"
+				},
+				"register": {
+					"viewName": "Register"
+				},
+				"match": {
+					"viewName": "Match"
+				},
+				"chatroom": {
+					"viewName": "Chatroom"
+				},
+				"rating": {
+					"viewName": "Rating"
 				}
+				
 			}
 		}
 	}

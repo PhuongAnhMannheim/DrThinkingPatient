@@ -1,0 +1,49 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="DrThinkingPatient.controller.Rating">
+	<App id="app">
+		<Page showHeader="false">
+			<content>
+				<List items="{/doc_info}" headerText=" doctor information">
+					<items>
+						<ObjectListItem type="Active" press="onListItemPress">
+							<attributes>
+								<ObjectAttribute text="Name:{Name}"/>
+								<ObjectAttribute text="Age:{Age}"/>
+								<ObjectAttribute text="Date of Birth:{Date}"/>
+								<ObjectAttribute text="Nationality:{Nationality}"/>
+								<ObjectAttribute text="Email:{Email}"/>
+								<ObjectAttribute text="Address:{Address}"/>
+								<ObjectAttribute text="Country:{Country}"/>
+								<ObjectAttribute text="Phone No:{Phone}"/>
+								<ObjectAttribute text="Specialty:{Specialty}"/>
+							</attributes>
+						</ObjectListItem>
+					</items>
+				</List>
+				<Panel id="panel1" busyIndicatorDelay="0" headerText="Average User Rating">
+					<content>
+						<l:VerticalLayout class="sapUiContentPadding">
+							<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" value="4" tooltip="Rating Tooltip"/>
+						
+						</l:VerticalLayout>
+					</content>
+				</Panel>
+				
+				<Panel id="panel2" busyIndicatorDelay="0" headerText="Write a review">
+					<content>
+						<l:VerticalLayout class="sapUiContentPadding">
+						
+							<Label text="Title"></Label>
+							<Input required="true"/>
+							<Label text="Review"></Label>
+							<Input required="true"/>
+							<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="2"/>
+							<Button text="Submit" width="250px" press="onApproveDialog" class="sapUiSmallMarginBottom"/>
+						</l:VerticalLayout>
+					</content>
+				</Panel>
+			
+			</content>
+		</Page>
+	</App>
+</mvc:View>
