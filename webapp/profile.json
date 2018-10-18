@@ -1,0 +1,30 @@
+{
+	"p_info": [{
+		"Name": "Omar el Rafik",
+		"Age": "32",
+		"Date": "7/7/1990",
+		"Nationality": "Egyptian",
+		"Email": "Omarelrafik @yahoo.com",
+		"Address": "Q7",
+		"City": "Mannheim",
+		"Country": "Germany",
+		"Phone": "01234546789",
+		"Insurance Company": "AOK",
+		"Blood Type": "A",
+		"Allergies1":"Pollen Allergy",
+		"Allergies2":"Allergic to ibuprofen",
+		"Allergies3":"Allergic to papaya",
+		"Medical1":"Gall Bladder removal 1/12/2018",
+		"Medical2":"Kidney stone removal 12/11/1016",
+		"Habits1":"Smoking",
+		"Habits2":"Reading",
+		"Habits3":"Yoga",
+		"Habits4":"Cooking",
+		"Habits5":"Wining Tasting",
+	    "IBAN":"xxx35249476253776",
+	    "BIC":"2623",
+	    "PayPal":"omarelrafik"
+		
+	}]
+
+}

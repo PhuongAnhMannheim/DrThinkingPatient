@@ -8,12 +8,12 @@
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true"  icon="sap-icon://customer" iconAlt="name"
-					intro="profile" title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
+					 title="Omar le Rafik" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
 					markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
 					<attributes>
-						<ObjectAttribute title="Age:28" />
+						<ObjectAttribute title="Age:32" />
 						<ObjectAttribute title="City:Mannheim" />
-						<ObjectAttribute title="Email:Dienialthinking @yahoo.com"/>
+						<ObjectAttribute title="Omarelrafik @yahoo.com"/>
 						
 					</attributes>
 					<statuses>
@@ -23,7 +23,7 @@
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://activity-individual">
-									<List items="{/doc_info}" headerText="	personal information">
+									<List items="{/p_info}" headerText="	personal information">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>
@@ -35,41 +35,61 @@
 								<ObjectAttribute text="Address:{Address}"/>
 								<ObjectAttribute text="Country:{Country}"/>
 								<ObjectAttribute text="Phone No:{Phone}"/>
-								<ObjectAttribute text="Specialty:{Specialty}"/>
+								<ObjectAttribute text="Specialty:{Insurance Company}"/>
+								<ObjectAttribute text="Specialty:{Blood Type}"/>
 							</attributes>
 						</ObjectListItem>
 					</items>
 				</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://stethoscope" count="3">
-									<List items="{/doc_info}" headerText="Medical experience data">
+								<IconTabFilter icon="sap-icon://stethoscope" >
+									<List items="{/p_info}" headerText="Allergies">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>
-								<ObjectAttribute text="{medical1}"/>
-								<ObjectAttribute text="{medical2}"/>
+								<ObjectAttribute text="{Allergies1}"/>
+								<ObjectAttribute text="{Allergies2}"/>
+								<ObjectAttribute text="{Allergies3}"/>	
+							</attributes>
+						</ObjectListItem>
+					</items>
+				</List>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://newspaper" >
+									<List items="{/p_info}" headerText="Medical history">
+					<items>
+						<ObjectListItem type="Active" press="onListItemPress">
+							<attributes>
+								<ObjectAttribute text="{Medical1}"/>
+								<ObjectAttribute text="{Medical2}"/>
+							
 								
 							</attributes>
 						</ObjectListItem>
 					</items>
 				</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://newspaper" count="12">
-									<List items="{/doc_info}" headerText="Certificate and licenses">
+							
+								<IconTabFilter icon="sap-icon://contacts" >
+									<List items="{/p_info}" headerText="Habits and Hobbies">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>
-								<ObjectAttribute text="{Certificate1}"/>
-								<ObjectAttribute text="{Certificate2}"/>
-								<ObjectAttribute text="{Certificate3}"/>
+								<ObjectAttribute text="{Habits1}"/>
+								<ObjectAttribute text="{Habits2}"/>
+							<ObjectAttribute text="{Habits3}"/>
+								<ObjectAttribute text="{Habits4}"/>
+								<ObjectAttribute text="{Habits5}"/>
+						
 								
 							</attributes>
 						</ObjectListItem>
 					</items>
 				</List>
 								</IconTabFilter>
+								
 								<IconTabFilter icon="sap-icon://credit-card">
-									<List items="{/doc_info}" headerText="Bank details">
+									<List items="{/p_info}" headerText="Bank details">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>
