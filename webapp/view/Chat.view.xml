@@ -12,7 +12,7 @@
 				<Panel>
 							<List headerText="Chatting list">
 								<items>
-									<ObjectListItem title="Omar" type="Active" press="onListItemPress" icon="sap-icon://wounds-doc">
+									<ObjectListItem title="Daniel Thinking" type="Active" press="onListItemPress" icon="sap-icon://wounds-doc">
 										<firstStatus icon="sap-icon://email">
 											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
 										</firstStatus>
@@ -20,7 +20,7 @@
 											<ObjectAttribute text="status:offline" />
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Anh" type="Active" press="onListItemPress"
+									<ObjectListItem title="Tai Ly" type="Active" press="onListItemPress"
 									icon="sap-icon://wounds-doc">
 										<firstStatus>
 											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
@@ -30,7 +30,7 @@
 											
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Qian" type="Active" press="onListItemPress"
+									<ObjectListItem title="Hossam" type="Active" press="onListItemPress"
 										icon="sap-icon://wounds-doc">
 										<firstStatus>
 											<ObjectStatus text="Oct 11" icon="sap-icon://email"/>
@@ -40,7 +40,7 @@
 											<ObjectAttribute text="status:online"/>
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Yumna" type="Active" press="onListItemPress"
+									<ObjectListItem title="Tom" type="Active" press="onListItemPress"
 										icon="sap-icon://wounds-doc">
 										<firstStatus>
 											<ObjectStatus text="Oct 10" icon="sap-icon://email"/>

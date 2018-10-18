@@ -11,7 +11,7 @@ sap.ui.define([
 		onInit: function () {
  
     
-			var oModel = new sap.ui.model.json.JSONModel("profile.json");
+			var oModel = new sap.ui.model.json.JSONModel("appointment.json");
 			
 
 			this.getView().setModel(oModel);

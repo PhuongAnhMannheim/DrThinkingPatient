@@ -16,7 +16,7 @@
 						alignContent="Center">
 						<items>
 							<Text
-								text="Searching for available patients that fit your specialty ..." 
+								text="Searching for available doctors that fit your symptom ..." 
 								width="200px"
 								class="center"></Text>
 							<Image 

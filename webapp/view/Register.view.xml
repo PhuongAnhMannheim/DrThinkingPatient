@@ -22,7 +22,7 @@
 									width="20%"
 									class="center">
 								</Image>
-								<Text text="Doctor Registration" class="sapUiMediumMarginBottom"/>
+								<Text text="Patient Registration" class="sapUiMediumMarginBottom"/>
 								<Text text="Please enter your credentials" class="sapUiMediumMarginBottom"/>
 									<f:SimpleForm id="SimpleFormToolbar"
 										editable="true"

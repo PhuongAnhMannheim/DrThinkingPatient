@@ -20,7 +20,7 @@
 							<ToolbarSpacer></ToolbarSpacer>
 							<Text id="Header" text="Dr. Thinking"></Text>
 							<ToolbarSpacer></ToolbarSpacer>
-							<Button text="Daniel Thinking" type="Transparent" press="handleUserNamePress"></Button>
+							<Button text="Omar le Rafik" type="Transparent" press="handleUserNamePress"></Button>
 						</tnt:ToolHeader>
 					</tnt:header>
 				<tnt:sideContent>
