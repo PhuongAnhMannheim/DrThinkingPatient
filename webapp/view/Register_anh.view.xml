@@ -1,0 +1,99 @@
+<mvc:View xmlns:l="sap.ui.layout" 
+	xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified" 
+	class="viewPadding" 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	controllerName="DrThinkingPatient.controller.Register">
+	<App>
+		<pages>
+			<Page 
+				title="{i18n>title}"
+				showHeader="false" >
+					<content>
+						<VBox  
+							justifyContent="Center" 
+							alignItems="Center" 
+							alignContent="Center">
+							<items>
+								<Image 
+									src="img/dr_thinking_logo.png" 
+									width="20%"
+									class="center">
+								</Image>
+								<Text text="Doctor Registration" class="sapUiMediumMarginBottom"/>
+								<Text text="Please enter your credentials" class="sapUiMediumMarginBottom"/>
+									<f:SimpleForm id="SimpleFormToolbar"
+										editable="true"
+										layout="ResponsiveGridLayout"
+										labelSpanXL="4"
+										labelSpanL="3"
+										labelSpanM="4"
+										labelSpanS="12"
+										adjustLabelSpan="false"
+										emptySpanXL="0"
+										emptySpanL="4"
+										emptySpanM="0"
+										emptySpanS="0"
+										columnsXL="2"
+										columnsL="1"
+										columnsM="1"
+										singleContainerFullSize="false"
+										ariaLabelledBy="Title1" >
+									<f:content>
+										<Label text="First Name"></Label>
+										<Input value="{firstname}" placeholder="Isa"></Input>
+										<Label text="Last Name"></Label>
+										<Input value="{lastname}" placeholder="Hahn"></Input>
+										<Label text="Date of Birth"></Label>
+										<Input value="{dateofbirth}" type="Date"></Input>
+										<Label text="Email"></Label>
+										<Input value="{email}" placeholder="i.hahn@patient.com"></Input>
+										<Label text="Password"></Label>
+										<Input value="{password}" type="Password"></Input>
+										<Label text="Re-enter Password"></Label>
+										<Input value="{password2}" type="Password"></Input>
+									</f:content>
+								</f:SimpleForm>
+										<Text text="In case you are in need of doctors and medical facilities"></Text>
+								<f:SimpleForm id="SimpleFormAdress"
+										editable="true"
+										layout="ResponsiveGridLayout"
+										labelSpanXL="4"
+										labelSpanL="3"
+										labelSpanM="4"
+										labelSpanS="12"
+										adjustLabelSpan="false"
+										emptySpanXL="0"
+										emptySpanL="4"
+										emptySpanM="0"
+										emptySpanS="0"
+										columnsXL="2"
+										columnsL="1"
+										columnsM="1"
+										singleContainerFullSize="false"
+										ariaLabelledBy="Title1" >
+									<f:content>
+										<Label text="Insurance No."></Label>
+										<Input value="{insurancenumber}"></Input>
+										<Label text="Street name"></Label>
+										<Input value="{street}"></Input>
+										<Label text="House number"></Label>
+										<Input value="{housenumber}"></Input>
+										<Label text="Postal code"></Label>
+										<Input value="{postalcode}"></Input>
+										<Label text="City"></Label>
+										<Input value="{city}"></Input>
+										<Label text="Country"></Label>
+										<Input value="{coutry}"></Input>
+									</f:content>
+								</f:SimpleForm>
+							<Button width="12rem" text="register" press="onPress"/>
+						</items>
+					</VBox>	
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
