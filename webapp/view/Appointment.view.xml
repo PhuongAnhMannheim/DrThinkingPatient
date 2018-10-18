@@ -23,7 +23,7 @@
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="Name:{Name_1}"/>
+													<ObjectAttribute text="Name:{Name}"/>
 													<ObjectAttribute text="Specialty:{Specialty_1}"/>
 													<ObjectAttribute text="Date:{date_1}"/>
 													<ObjectAttribute text="Time:{Time_1}"/>
