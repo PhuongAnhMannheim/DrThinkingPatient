@@ -3,13 +3,14 @@
 	<App id="app">
 		<Page showHeader="false">
 			<content>
-				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" intro="profile"
-					title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true" markFlagged="true"
-					markFavorite="true" numberState="Success" backgroundDesign="Translucent">
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true"  icon="sap-icon://customer" iconAlt="name"
+					 title="Omar le Rafik" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
+					markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
 					<attributes>
-						<ObjectAttribute title="Age:28"/>
-						<ObjectAttribute title="City:Mannheim"/>
-						<ObjectAttribute title="Email:Dienialthinking @yahoo.com"/>
+						<ObjectAttribute title="Age:32" />
+						<ObjectAttribute title="City:Mannheim" />
+						<ObjectAttribute title="Omarelrafik @yahoo.com"/>
+						
 					</attributes>
 					<statuses>
 						<ObjectStatus title="Rating" state="Warning" icon="sap-icon://favorite"/>
@@ -18,12 +19,12 @@
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://future" count="2">
-									<List items="{/p_info}" headerText=" Upcoming appointment">
+									<List items="{/doc_info}" headerText=" Upcoming appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
 													<ObjectAttribute text="Name:{Name_1}"/>
-													<ObjectAttribute text="Illness:{illness_1}"/>
+													<ObjectAttribute text="Specialty:{Specialty_1}"/>
 													<ObjectAttribute text="Date:{date_1}"/>
 													<ObjectAttribute text="Time:{Time_1}"/>
 													
@@ -34,12 +35,12 @@
 										
 									</List>
 									
-										<List items="{/p_info}" headerText=" Upcoming appointment">
+										<List items="{/doc_info1}" headerText=" Upcoming appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
 													<ObjectAttribute text="Name:{Name_2}"/>
-													<ObjectAttribute text="Illness:{illness_2}"/>
+													<ObjectAttribute text="Specialty:{Specialty_2}"/>
 													<ObjectAttribute text="Date:{date_2}"/>
 													<ObjectAttribute text="Time:{Time_2}"/>
 													
@@ -52,12 +53,12 @@
 								</IconTabFilter>
 								
 								<IconTabFilter icon="sap-icon://history" count="2">
-									<List items="{/p_info}" headerText="Previous appointment">
+									<List items="{/doc_info2}" headerText="Previous appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
 													<ObjectAttribute text="Name:{Name_3}"/>
-													<ObjectAttribute text="Illness:{illness_3}"/>
+													<ObjectAttribute text="Specialty:{Specialty_3}"/>
 													<ObjectAttribute text="Date:{date_3}"/>
 													<ObjectAttribute text="Time:{Time_3}"/>
 													
@@ -67,12 +68,12 @@
 										</items>
 									</List>
 									
-									<List items="{/p_info}" headerText="Previous appointment">
+									<List items="{/doc_info3}" headerText="Previous appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
 													<ObjectAttribute text="Name:{Name_4}"/>
-													<ObjectAttribute text="Illness:{illness_4}"/>
+													<ObjectAttribute text="Specialty:{Specialty_4}"/>
 													<ObjectAttribute text="Date:{date_4}"/>
 													<ObjectAttribute text="Time:{Time_4}"/>
 													
