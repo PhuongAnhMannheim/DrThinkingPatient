@@ -95,10 +95,12 @@ sap.ui.define([
 			}
 		},
 		onPressSearch: function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("search");
+			/*this.getOwnerComponent().getRouter().navTo("search");
 			jQuery.sap.delayedCall(5000, this, function () {
 				this.getOwnerComponent().getRouter().navTo("match");
-			});
+			});*/
+			this.getOwnerComponent().getRouter().navTo("search");
+			
 			/*var oKey = "search";
 			var viewId = "__xmlview4";
 			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/

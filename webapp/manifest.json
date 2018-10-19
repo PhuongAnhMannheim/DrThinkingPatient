@@ -127,6 +127,11 @@
 					"pattern": "rating",
 					"name": "rating",
 					"target": "rating"
+				},
+				{
+					"pattern": "drprofile",
+					"name": "drprofile",
+					"target": "drprofile"
 				}
 				
 			],
@@ -160,6 +165,9 @@
 				},
 				"rating": {
 					"viewName": "Rating"
+				},
+				"drprofile": {
+					"viewName": "DrProfile"
 				}
 				
 			}

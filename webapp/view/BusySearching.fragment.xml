@@ -1,0 +1,9 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<BusyDialog
+		title="Finding the next available doctor"
+		text="Searching for available doctors that fit your needs ..."
+		showCancelButton="true"
+		close="onDialogClosed"/>
+</core:FragmentDefinition>

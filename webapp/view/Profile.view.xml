@@ -13,7 +13,7 @@
 					<attributes>
 						<ObjectAttribute title="Age:32" />
 						<ObjectAttribute title="City:Mannheim" />
-						<ObjectAttribute title="Omarelrafik @yahoo.com"/>
+						<ObjectAttribute title="Omarelrafik@yahoo.com"/>
 						
 					</attributes>
 					<statuses>
@@ -23,7 +23,7 @@
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://activity-individual">
-									<List items="{/p_info}" headerText="	personal information">
+									<List items="{/p_info}" headerText="personal information">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>

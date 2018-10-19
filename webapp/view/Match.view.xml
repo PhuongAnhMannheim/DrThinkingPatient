@@ -4,13 +4,13 @@
 	displayBlock="true" 
 	xmlns="sap.m">
 	<App>
-		<pages><Page title="{i18n>title}">
+		<pages><Page title="{i18n>title}" showHeader="false">
 				<content>
 					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 						<items>
 						<Text text="Great! You were matched with Daniel Thinking!"/>
-						<Text text="Daniel Thinking is a specialty in Allergists"/>
-						<Button width="12rem" text="check profile" press="onPressPatientProfile" type="Emphasized"/>
+						<Text text="Daniel Thinking is a specialist in Allergies"/>
+						<Button width="12rem" text="check profile" press="onPressDoctorProfile" type="Emphasized"/>
 						<Button width="12rem" text="accept and chat" press="onPressChat"/>
 						<Button width="12rem" text="reject" press="onPressReject"/>
 						</items>

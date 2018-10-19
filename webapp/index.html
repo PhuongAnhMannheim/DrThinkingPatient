@@ -21,6 +21,9 @@
 					})
 				}).placeAt("content");
 			});
+			var oModel = new sap.ui.model.json.JSONModel();
+			oModel.loadData("drprofile.json");
+    		sap.ui.getCore().setModel(oModel2);
 		</script>
 	</head>
 	<body class="sapUiBody" id="content">

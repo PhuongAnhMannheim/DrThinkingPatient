@@ -8,6 +8,9 @@ sap.ui.define([
 	/*	onPressPatientProfile: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("search");
 		},*/
+		onPressDoctorProfile: function(){
+			this.getOwnerComponent().getRouter().navTo("drprofile");
+		},
 		onPressChat:function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("chatroom");
 		},

@@ -1,5 +1,6 @@
 <mvc:View 
 	xmlns:l="sap.ui.layout" 
+	xmlns:f="sap.ui.layout.form"
 	xmlns:core="sap.ui.core" 
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m" 
@@ -7,8 +8,8 @@
 	controllerName="DrThinkingPatient.controller.Search">
 	<App id="app">
 			<Page 
-				title="{i18n>title}"
-				showHeader="false" >
+			title="{i18n>title}"
+			showHeader="false" >
 			<content>
 					<VBox
 						justifyContent="Center" 
@@ -16,15 +17,54 @@
 						alignContent="Center">
 						<items>
 							<Text
-								text="Searching for available doctors that fit your symptom ..." 
-								width="200px"
+								text="In order to find an available doctor that fits your needs the most, we require some information." 
+								width="300px"
 								class="center"></Text>
-							<Image 
-								id="Imgloupe"
-								src="img/lupe.jpg" 
-								width="30%"
-								class="center"></Image>
-							<BusyIndicator size="4.6em" />
+								<f:SimpleForm id="SimpleFormToolbar"
+										editable="true"
+										layout="ResponsiveGridLayout"
+										labelSpanXL="4"
+										labelSpanL="3"
+										labelSpanM="4"
+										labelSpanS="12"
+										adjustLabelSpan="false"
+										emptySpanXL="0"
+										emptySpanL="4"
+										emptySpanM="0"
+										emptySpanS="0"
+										columnsXL="2"
+										columnsL="1"
+										columnsM="1"
+										singleContainerFullSize="false"
+										ariaLabelledBy="Title1" >
+									<f:content>
+										<Label text="Reason of Request"></Label>
+										<Select id="SearchReason" selectedKey="{specialty}">
+											<items>
+												<core:Item text="Urgent Treatment" key="urgent"/>
+												<core:Item text="Prediagnostics" key="prediagnostic"/>
+												<core:Item text="New Doctor due to Relocation" key="relocation"/>
+												<core:Item text="others" key="others"/>
+											</items>
+										</Select>
+										<Label text="Specialty"></Label>
+										<Select id="Specialty" selectedKey="{specialty}">
+											<items>
+												<core:Item text="Allergists" key="Allergists"/>
+												<core:Item text="Anesthesiologists" key="Anesthesiologists"/>
+												<core:Item text="Dermatologists" key="Dermatologists"/>
+												<core:Item text="Colon" key="Colon"/>
+												<core:Item text="Endocrinologists" key="Endocrinologists"/>
+												<core:Item text="Gastroenterologists" key="Gastroenterologists"/>
+												<core:Item text="Otolaryngologsts" key="Otolaryngologists"/>
+												<core:Item text="others" key="others"/>
+											</items>
+										</Select>
+										<Label text="Description"></Label>
+										<TextArea></TextArea>
+									</f:content>
+								</f:SimpleForm>
+								<Button text="Sent Search Description" press="onOpenDialog"></Button>
 						</items>
 					</VBox>	
 			</content>

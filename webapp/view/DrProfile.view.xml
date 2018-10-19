@@ -1,0 +1,62 @@
+<core:View xmlns:core="sap.ui.core"
+		   xmlns="sap.uxap"
+		   xmlns:m="sap.m"
+		   xmlns:f="sap.f"
+		   xmlns:l="sap.ui.layout"
+		   controllerName="DrThinkingPatient.controller.DrProfile"
+		   height="100%">
+	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" isChildPage="true" enableLazyLoading="false">
+		<headerTitle>
+			<ObjectPageHeader objectImageURI="./img/dr_daniel_thinking.png" objectTitle="DanielThinking" objectImageShape="Circle" objectSubtitle="First Care Physician, Allergist">
+				<actions>
+					<ObjectPageHeaderActionButton icon="sap-icon://employee-approvals" text="accept" type="Transparent" tooltip="Accept" press="onAccept"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://employee-rejections" text="reject" type="Transparent" tooltip="Reject"/>
+				</actions>
+			</ObjectPageHeader>
+		</headerTitle>
+		<headerContent>
+			<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+				<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+					<m:Link text="+49 134 546723"/>
+					<m:Link text="D.Thinking@doctors.com"/>
+				</l:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="careerSection" title="Career">
+				<subSections>
+					<ObjectPageSubSection id="careerSubSection" title=" ">
+						<blocks>
+							<l:VerticalLayout>
+							<m:Text text="Doctoral degree from University of Arkansas School of Medicine"></m:Text>
+							<m:Text text="Fellow, American College of Otolaryngology"></m:Text>
+							</l:VerticalLayout>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="certificateSection" title="Certificates and Awards">
+				<subSections>
+					<ObjectPageSubSection id="certificateSubSection" title=" ">
+						<blocks>
+							<l:VerticalLayout>
+							<m:Text text="Doctor of the year award from American Otolaryngology Medical Association in 2017"></m:Text>
+							<m:Text text="Otolaryngologist of the year award from the national republican of congressional committee Otolaryngology advisory board in 2018"></m:Text>
+							<m:Text text="Certification in Otolaryngology by the American Board of Surgery"></m:Text>
+							</l:VerticalLayout>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="recommendationsSection" title="Patients' Opinion">
+				<subSections>
+					<ObjectPageSubSection id="recommendationsSubSection" title=" ">
+						<blocks>
+							<m:Text text="Jack Johnson: He is one of the best doctors I know. Very competent and more importantly he took time to make me feel relieved because he is taking care of my medical treatment. He answers very quickly on questions from patient's side. I can only recommend!"></m:Text>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</core:View>

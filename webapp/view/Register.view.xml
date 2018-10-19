@@ -43,13 +43,17 @@
 										ariaLabelledBy="Title1" >
 									<f:content>
 										<Label text="First Name"></Label>
-										<Input value="{firstname}" placeholder="Isa"></Input>
+										<Input value="{firstname}" placeholder="Omar"></Input>
 										<Label text="Last Name"></Label>
-										<Input value="{lastname}" placeholder="Hahn"></Input>
+										<Input value="{lastname}" placeholder="el Rafik"></Input>
 										<Label text="Date of Birth"></Label>
 										<Input value="{dateofbirth}" type="Date"></Input>
+										<Label text="Insurance Company"></Label>
+										<Input value="{insurancecompany}"></Input>
+										<Label text="Insurance Number"></Label>
+										<Input value="{insurancenumber}"></Input>
 										<Label text="Email"></Label>
-										<Input value="{email}" placeholder="i.hahn@patient.com"></Input>
+										<Input value="{email}" placeholder="omar.elrafik@patient.com"></Input>
 										<Label text="Password"></Label>
 										<Input value="{password}" type="Password"></Input>
 										<Label text="Re-enter Password"></Label>

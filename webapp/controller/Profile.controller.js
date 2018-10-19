@@ -8,10 +8,7 @@ sap.ui.define([
 			this.getOwnerComponent().getRouter().navTo("home");
 		},
 			onInit: function () {
- 
-    
 			var oModel = new sap.ui.model.json.JSONModel("profile.json");
-
 			this.getView().setModel(oModel);
 
 		},

@@ -68,34 +68,34 @@
 												icon="sap-icon://doctor"
 												text="View and Maintain Profile" 
 												press="onPressProfile" 
-												width="250px" 
+												width="280px" 
 												class="cube"></Button>
 											<Button id="BtnAppointments" 
 												icon="sap-icon://appointment-2"
-												text="View Appointments" 
+												text="View and Schedule Appointments" 
 												press="onPressAppointments" 
-												width="250px" 
+												width="280px" 
 												class="cube"></Button>
 											<Button 
 												id="BtnChat" 
-												text="View Conversations" 
+												text="View and Have Conversations" 
 												icon="sap-icon://discussion"
 												press="onPressChats" 
-												width="250px" 
+												width="280px" 
 												class="cube"></Button>
 											<Button 
 												id="BtnSearch" 
 												icon="sap-icon://employee-lookup"
-												text="Search for Available Patients" 
+												text="Find a Doctor" 
 												press="onPressSearch" 
-												width="250px" 
+												width="280px" 
 												class="cube"></Button>
 											<Button 
 												id="BtnRating" 
 												icon="sap-icon://favorite"
 												text="Rating" 
 												press="onPressRate" 
-												width="250px" 
+												width="280px" 
 												class="cube"></Button>
 									</items>
 								</VBox>	
