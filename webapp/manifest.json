@@ -34,7 +34,6 @@
 			"sap_belize"
 		]
 	},
-
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "DrThinkingPatient.view.App",
@@ -65,9 +64,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -133,7 +134,6 @@
 					"name": "drprofile",
 					"target": "drprofile"
 				}
-				
 			],
 			"targets": {
 				"welcome": {
@@ -169,8 +169,11 @@
 				"drprofile": {
 					"viewName": "DrProfile"
 				}
-				
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }
