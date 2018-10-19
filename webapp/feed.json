@@ -1,5 +1,20 @@
 {
-	"EntryCollection" : [ {
+	"EntryCollection" : [ 
+		 {
+		"Author" : "Daniel Thinking",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Reply",
+		"Date" : "Oct 19 2018, 1:03:37 PM",
+		"Text" : "okay, it is not a big deal, you dont need to make an appointment, just have a rest"
+	},
+	{
+		"Author" : "Omar",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Request",
+		"Date" : "Oct 19 2018, 1:02:59 PM",
+		"Text" : "I have headache and sore throat"
+	},
+	{
 		"Author" : "Daniel Thinking",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
 		"Type" : "Reply",
