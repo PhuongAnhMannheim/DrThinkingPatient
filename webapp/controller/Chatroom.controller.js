@@ -13,6 +13,7 @@ sap.ui.define([
  			var oModel = new sap.ui.model.json.JSONModel("feed.json");
 			this.getView().setModel(oModel);
 		},
+		
 		onPost: function(oEvent) {
 			var oFormat = DateFormat.getDateTimeInstance({ style: "medium" });
 			var oDate = new Date();

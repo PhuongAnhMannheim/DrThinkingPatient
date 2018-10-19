@@ -1,4 +1,4 @@
-<mvc:View controllerName="DrThinkingPatient.controller.Chatroom" 
+<mvc:View controllerName="DrThinkingPatient.controller.Schedule" 
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true" 
 	xmlns="sap.m">
