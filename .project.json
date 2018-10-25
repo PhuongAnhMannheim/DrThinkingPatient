@@ -24,11 +24,12 @@
     "resourceModelName": "i18n"
   },
   "build": {
-    "buildRequired": true,
+    "buildRequired": false,
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
-    "excludedFiles": []
+    "excludedFiles": [],
+    "lastBuildDateTime": "Thu, 25 Oct 2018 11:56:53 GMT"
   },
   "basevalidator": {
     "services": {
@@ -45,5 +46,10 @@
   "hybrid": {
     "hatVersion": "1.28.10",
     "appNamespace": "DrThinkingPatient"
+  },
+  "hcpdeploy": {
+    "account": "agsdev",
+    "name": "drthinkingpatient",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
