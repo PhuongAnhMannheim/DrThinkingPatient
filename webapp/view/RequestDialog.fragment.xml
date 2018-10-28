@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="requestDialog"
+      title="Request">
+	<content id="reqMessage">
+		
+	</content>
+   	<buttons>
+   		<Button
+   		id="acceptButton"
+   		text="Accept"
+   		press="onAccept">
+   		</Button>
+   			<Button
+   			id="declineButton"
+   		text="Decline"
+   		press="onDecline">
+   		</Button>
+   	</buttons>
+   </Dialog>
+</core:FragmentDefinition>
