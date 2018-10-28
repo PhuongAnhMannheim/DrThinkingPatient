@@ -21,7 +21,7 @@ sap.ui.define([
 				key: 'profile',
 				icon: 'sap-icon://doctor'
 			},{
-				title: 'Appointments',
+				title: 'Calendar',
 				key: 'calendar',
 				icon: 'sap-icon://appointment-2'
 			},{
@@ -29,7 +29,7 @@ sap.ui.define([
 				icon: 'sap-icon://discussion',
 				key: 'chat'
 			}, {
-				title: 'Patient Finder',
+				title: 'Doctor Finder',
 				icon: 'sap-icon://employee-lookup',
 				key: 'search'
 			}
@@ -94,38 +94,25 @@ sap.ui.define([
 				toggleButton.setTooltip('Small Size Navigation');
 			}
 		},
-		onPressSearch: function(oEvent){
-			/*this.getOwnerComponent().getRouter().navTo("search");
-			jQuery.sap.delayedCall(5000, this, function () {
-				this.getOwnerComponent().getRouter().navTo("match");
-			});*/
-			this.getOwnerComponent().getRouter().navTo("search");
-			
-			/*var oKey = "search";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
+		onPressProfile:function(oEvent){
+			this._homeNav("profile");
 		},
 		onPressAppointments:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("calendar");
-			/*var oKey = "calendar";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
-		},
-		onPressProfile:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("profile");
-			/*var oKey = "profile";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
-			
+			this._homeNav("calendar");
 		},
 		onPressChats: function(oEvent) {
-			this.getOwnerComponent().getRouter().navTo("chat");
-			/*var oKey = "chat";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
+			this._homeNav("chat");
 		},
-			onPressRate: function(oEvent){
+		onPressSearch: function(oEvent){
+			this._homeNav("search");
+		},
+		onPressRate: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("rating");
+		},
+		_homeNav:function(key){
+			var sKey = key;
+			var viewId = this.getView().getId();
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
 		}
 		
 	});
