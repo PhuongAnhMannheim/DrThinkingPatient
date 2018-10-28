@@ -22,7 +22,7 @@ sap.ui.define([
 				icon: 'sap-icon://doctor'
 			},{
 				title: 'Appointments',
-				key: 'appointments',
+				key: 'calendar',
 				icon: 'sap-icon://appointment-2'
 			},{
 				title: 'Conversations',
@@ -106,8 +106,8 @@ sap.ui.define([
 			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 		},
 		onPressAppointments:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("appointment");
-			/*var oKey = "appointments";
+			this.getOwnerComponent().getRouter().navTo("calendar");
+			/*var oKey = "calendar";
 			var viewId = "__xmlview4";
 			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 		},

@@ -12,14 +12,14 @@ sap.ui.define(['jquery.sap.global',
 	function(MessageBox, jQuery, Button, Dialog, Label, Popover, List, StandardListItem, Fragment, Controller, JSONModel) {
 		"use strict";
 
-		var PageController = Controller.extend("sap.m.sample.PlanningCalendarModifyAppointments.Calendar", {
+		var PageController = Controller.extend("DrThinkingPatient.controller.Calendar", {
 
 			onInit: function () {
 				var oModel = new JSONModel();
 				oModel.setData({
 					startDate: new Date("2017", "0", "15", "8", "0"),
 					people: [{
-						pic: "test-resources/sap/ui/documentation/sdk/images/John_Miller.png",
+						pic: "img/dr_daniel_thinking.png",
 						name: "John Miller",
 						role: "team member",
 						appointments: [
@@ -228,7 +228,7 @@ sap.ui.define(['jquery.sap.global',
 						]
 					},
 						{
-							pic: "test-resources/sap/ui/documentation/sdk/images/Donna_Moore.jpg",
+							pic: "img/dr_daniel_thinking.png",
 							name: "Donna Moore",
 							role: "team member",
 							appointments: [

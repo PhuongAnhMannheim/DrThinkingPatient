@@ -107,11 +107,11 @@
 								
 								<mvc:XMLView viewName="DrThinkingPatient.view.Profile"></mvc:XMLView>
 							</ScrollContainer>
-							<ScrollContainer id="appointments"
+							<ScrollContainer id="calendar"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<mvc:XMLView viewName="DrThinkingPatient.view.Appointment"></mvc:XMLView>
+								<mvc:XMLView viewName="DrThinkingPatient.view.Calendar"></mvc:XMLView>
 							</ScrollContainer>
 							<ScrollContainer id="chat"
 											 horizontal="false"
