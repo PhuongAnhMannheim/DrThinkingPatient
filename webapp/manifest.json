@@ -29,10 +29,7 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_belize"
-		]
+		"supportedThemes": ["sap_hcb", "sap_belize"]
 	},
 	"sap.ui5": {
 		"rootView": {
@@ -64,11 +61,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -78,63 +73,51 @@
 				"controlId": "app",
 				"controlAggregation": "pages"
 			},
-			"routes": [
-				{
-					"pattern": "",
-					"name": "appWelcome",
-					"target": "welcome"
-				},
-				{
-					"pattern": "home",
-					"name": "home",
-					"target": "home"
-				},
-				{
-					"pattern": "profile",
-					"name": "profile",
-					"target": "profile"
-				},
-				{
-					"pattern": "appointment",
-					"name": "appointment",
-					"target": "appointment"
-				},
-				{
-					"pattern": "chat",
-					"name": "chat",
-					"target": "chat"
-				},
-				{
-					"pattern": "search",
-					"name": "search",
-					"target": "search"
-				},
-				{
-					"pattern": "register",
-					"name": "register",
-					"target": "register"
-				},
-				{
-					"pattern": "match",
-					"name": "match",
-					"target": "match"
-				},
-				{
-					"pattern": "chatroom",
-					"name": "chatroom",
-					"target": "chatroom"
-				},
-				{
-					"pattern": "rating",
-					"name": "rating",
-					"target": "rating"
-				},
-				{
-					"pattern": "drprofile",
-					"name": "drprofile",
-					"target": "drprofile"
-				}
-			],
+			"routes": [{
+				"pattern": "",
+				"name": "appWelcome",
+				"target": "welcome"
+			}, {
+				"pattern": "home",
+				"name": "home",
+				"target": "home"
+			}, {
+				"pattern": "profile",
+				"name": "profile",
+				"target": "profile"
+			}, {
+				"pattern": "appointment",
+				"name": "appointment",
+				"target": "appointment"
+			}, {
+				"pattern": "chat",
+				"name": "chat",
+				"target": "chat"
+			}, {
+				"pattern": "search",
+				"name": "search",
+				"target": "search"
+			}, {
+				"pattern": "register",
+				"name": "register",
+				"target": "register"
+			}, {
+				"pattern": "match",
+				"name": "match",
+				"target": "match"
+			}, {
+				"pattern": "chatroom",
+				"name": "chatroom",
+				"target": "chatroom"
+			}, {
+				"pattern": "rating",
+				"name": "rating",
+				"target": "rating"
+			}, {
+				"pattern": "drprofile",
+				"name": "drprofile",
+				"target": "drprofile"
+			}],
 			"targets": {
 				"welcome": {
 					"viewName": "Welcome"

@@ -26,8 +26,9 @@ sap.ui.define([
 			// simulate end of operation
 			_timeout = jQuery.sap.delayedCall(3000, this, function () {
 				this._dialog.close();
+				this._onSent();
 			});
-			this.onSent();
+			
 		},
 
 		onDialogClosed: function (oEvent) {
@@ -41,8 +42,15 @@ sap.ui.define([
 		},
 		
 		//Sent Request / Search Description
-		onSent: function(){
-			this.getOwnerComponent().getRouter().navTo("match");
+		_onSent: function(){
+			/*this.getOwnerComponent().getRouter().navTo("match");*/
+			var sKey = "match";
+			for (var i=3; i<7; i++){
+				var viewId = "__xmlview"+i;
+				if(sap.ui.getCore().byId(viewId + "--pageContainer") != undefined){
+					sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
+				}
+			}
 		}
 	});
 });

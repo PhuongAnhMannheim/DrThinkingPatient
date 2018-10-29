@@ -25,13 +25,9 @@ sap.ui.define([
 				key: 'calendar',
 				icon: 'sap-icon://appointment-2'
 			},{
-				title: 'Conversations',
+				title: 'Chat',
 				icon: 'sap-icon://discussion',
 				key: 'chat'
-			}, {
-				title: 'Doctor Finder',
-				icon: 'sap-icon://employee-lookup',
-				key: 'search'
 			}
 			],
 			fixedNavigation: [{
@@ -107,7 +103,8 @@ sap.ui.define([
 			this._homeNav("search");
 		},
 		onPressRate: function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("rating");
+			/*this.getOwnerComponent().getRouter().navTo("rating");*/
+			this._homeNav("rating");
 		},
 		_homeNav:function(key){
 			var sKey = key;

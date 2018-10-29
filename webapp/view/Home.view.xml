@@ -119,11 +119,35 @@
 											 height="100%">
 								<mvc:XMLView viewName="DrThinkingPatient.view.Chat"></mvc:XMLView>
 							</ScrollContainer>
+							<ScrollContainer id="chatroom"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Chatroom"></mvc:XMLView>
+							</ScrollContainer>
 							<ScrollContainer id="search"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
 								<mvc:XMLView viewName="DrThinkingPatient.view.Search"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="match"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Match"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="drprofile"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.DrProfile"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="rating"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingPatient.view.Rating"></mvc:XMLView>
 							</ScrollContainer>
 						</pages>
 					</NavContainer>
