@@ -20,8 +20,8 @@
 									class="center">
 								</Image>
 								<Text text="Welcome to Dr. Thinking" class="sapUiMediumMarginBottom"/>
-								<Input placeholder="user name / e-mail" required="true"/>
-								<Input type="Password" placeholder="passwort" required="true"/>
+								<Input id="email" placeholder="user name / e-mail" required="true"/>
+								<Input id="password" type="Password" placeholder="passwort" required="true"/>
 								<Button width="12rem" text="login" type="Emphasized" press="onPressLogin"/>
 								<Text text="or"/>
 								<Button width="12rem" text="register" press="onPressRegister"/>
