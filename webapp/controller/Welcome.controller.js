@@ -54,15 +54,6 @@ sap.ui.define([
             var that = this;
             var oRefToUserData = firebase.database().ref("/users");
             //MessageToast.show(oRefToUserData);
-            oRefToUserData.once("value").then(function(snapshot) {
-			    snapshot.forEach(function(childSnapshot) {
-			      // key will be "ada" the first time and "alan" the second time
-			      var key = childSnapshot.key;
-			      // childData will be the actual contents of the child
-			      var childData = childSnapshot.val();
-			      console.log(key + "; "+childData);
-			  });
-			});
             oRefToUserData.on("value", function(oSnapshot) {
                 var mUserData = oSnapshot.toJSON();
                 //MessageToast.show("User Data = "+ mUserData);
