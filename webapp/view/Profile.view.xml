@@ -8,12 +8,12 @@
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true"  icon="sap-icon://customer" iconAlt="name"
-					 title="Omar le Rafik" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
+					 title="{name}" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
 					markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
 					<attributes>
-						<ObjectAttribute title="Age:32" />
-						<ObjectAttribute title="City:Mannheim" />
-						<ObjectAttribute title="Omarelrafik@yahoo.com"/>
+						<ObjectAttribute title="Age:{age}" />
+						<ObjectAttribute title="City:{city}" />
+						<ObjectAttribute title="{email}"/>
 						
 					</attributes>
 					<statuses>
@@ -23,20 +23,21 @@
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://activity-individual">
-									<List items="{/p_info}" headerText="personal information">
+				<List  headerText="personal information">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
 							<attributes>
-								<ObjectAttribute text="Name:{Name}"/>
-								<ObjectAttribute text="Age:{Age}"/>
-								<ObjectAttribute text="Date of Birth:{Date}"/>
-								<ObjectAttribute text="Nationality:{Nationality}"/>
-								<ObjectAttribute text="Email:{Email}"/>
-								<ObjectAttribute text="Address:{Address}"/>
-								<ObjectAttribute text="Country:{Country}"/>
-								<ObjectAttribute text="Phone No:{Phone}"/>
-								<ObjectAttribute text="Specialty:{Insurance Company}"/>
-								<ObjectAttribute text="Specialty:{Blood Type}"/>
+								<ObjectAttribute text="Name:{userprofile/name}"/>
+								<ObjectAttribute text="Age:{age}"/>
+								<ObjectAttribute text="Date of Birth:{date}"/>
+								<ObjectAttribute text="Nationality:{nationality}"/>
+								<ObjectAttribute text="Email:{email}"/>
+								<ObjectAttribute text="Address:{address/street}"/>
+								<ObjectAttribute text="Zip Code:{address/zip_code}"/>
+								<ObjectAttribute text="Country:{address/country}"/>
+								<ObjectAttribute text="Phone No:{phone}"/>
+								<ObjectAttribute text="Specialty:{insurance/company}"/>
+								<ObjectAttribute text="Specialty:{bloodtype}"/>
 							</attributes>
 						</ObjectListItem>
 					</items>

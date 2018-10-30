@@ -41,14 +41,14 @@ sap.ui.define([
 			var profile = firebase.database().ref("/userprofile/patient_info/");
 			profile.on("value", function(snapshot) {
 				snapshot.forEach(function(childSnapshot){
-					console.log(childSnapshot.val().guid+" "+childSnapshot.val().email+" uid="+user.uid);	
 					if(childSnapshot.val().guid.toString() == user.uid.toString()){
-						user_profile = childSnapshot.val();
+						user_profile = childSnapshot.toJSON();
 					}
 				});	
 				if(user_profile){
-					 var oModel = new sap.ui.model.json.JSONModel(JSON.stringify(user_profile));
-					 console.log(user_profile);
+					console.log(user_profile)
+					 var oModel = new sap.ui.model.json.JSONModel({});
+					 oModel.setProperty("/userprofile", user_profile);
 					 that.getView().setModel(oModel);
 				}else{
 					MessageToast.show("You have no profile yet!");
