@@ -1,20 +1,7 @@
 {
 	"EntryCollection" : [
 		
-		{
-		"Author" : "Daniel Thinking",
-		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
-		"Type" : "Reply",
-		"Date" : "Nov 1 2018, 5:45:56 PM",
-		"Text" : "What's wrong with you Mr.Omar?"
-	},
-		{
-		"Author" : "Omar",
-		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
-		"Type" : "Request",
-		"Date" : "Nov 1 2018, 5:25:41 PM",
-		"Text" : "Hello doctor,i feel bad."
-	},
+	
 		 {
 		"Author" : "Your Dr.Thinking Team",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
