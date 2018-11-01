@@ -21,4 +21,4 @@ Finally, you are able to run the index.html.
 
 # Android
 See in this project the Anroid wrapper:
-https://github.com/ThaiJamesLee/DrThinkingPatientAndroid/blob/master/README.md
+https://github.com/ThaiJamesLee/DrThinkingPatientAndroid/
