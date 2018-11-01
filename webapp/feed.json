@@ -1,5 +1,12 @@
 {
 	"EntryCollection" : [
+			{
+		"Author" : "Daniel Thinking",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Reply",
+		"Date" : "Nov 1 2018, 6:17:50 PM",
+		"Text" : "Okay I see. It's not a big deal, please stay home and have nice rest. That will be fine!"
+	},
 		{
 		"Author" : "Omar",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
