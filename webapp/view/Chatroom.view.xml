@@ -6,7 +6,9 @@
 		<pages>
 			<Page title="{i18n>title}" showHeader="false"> 
 				<content>
-					<Button icon="sap-icon://appointment-2" type="Emphasized" tooltip="Make an Appointment" press="onAppointment"></Button>
+					<Panel>
+						<Text text="Chatroom"></Text>
+					</Panel>
 					<FeedInput
 						post="onPost"
 						class="sapUiSmallMarginTopBottom" 
