@@ -18,3 +18,7 @@ You need to create a trial account to access it.
 4. Insert the git project URL for HTTPS.
 
 Finally, you are able to run the index.html.
+
+# Android
+See in this project the Anroid wrapper:
+https://github.com/ThaiJamesLee/DrThinkingPatientAndroid/blob/master/README.md
