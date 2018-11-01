@@ -20,5 +20,5 @@ You need to create a trial account to access it.
 Finally, you are able to run the index.html.
 
 # Android
-See in this project the Anroid wrapper:
+See in this project the Android wrapper:
 https://github.com/ThaiJamesLee/DrThinkingPatientAndroid/
