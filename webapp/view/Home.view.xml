@@ -32,7 +32,8 @@
 											enabled="{enabled}"
 											expanded="{expanded}"
 											items="{items}"
-											key="{key}">
+											key="{key}"
+											visible="{visible}">
 						<tnt:NavigationListItem text="{title}"
 												key="{key}"
 												enabled="{enabled}">

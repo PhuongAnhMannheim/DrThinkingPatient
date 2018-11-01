@@ -18,7 +18,18 @@ sap.ui.define(['jquery.sap.global',
 				var oModel = new JSONModel();
 				oModel.setData({ 
 					startDate: new Date("2018", "10", "2", "12", "0"),
-					people: [{
+					people: [
+						{
+						pic: "img/omar.png",
+						name: "Omar ElRafik",
+						role: "patient",
+						appointments: [
+						],
+						headers: [
+						
+						]
+					}
+						,{
 						pic: "img/dr_daniel_thinking.png",
 						name: "Dr. Daniel Thinking",
 						role: "doctor",

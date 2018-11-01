@@ -32,7 +32,8 @@ sap.ui.define([
 			},{
 				title: 'Dr',
 				icon: 'sap-icon://discussion',
-				key: 'drprofile'
+				key: 'drprofile',
+				visible: false
 			}
 			
 			],
