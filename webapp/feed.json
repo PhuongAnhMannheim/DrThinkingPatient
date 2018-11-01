@@ -1,6 +1,13 @@
 {
 	"EntryCollection" : [
 		{
+		"Author" : "Daniel Thinking",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Reply",
+		"Date" : "Nov 1 2018, 6:08:26 PM",
+		"Text" : "What's wrong with you Mr.Omar?"
+	},
+		{
 		"Author" : "Omar",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
 		"Type" : "Reply",
