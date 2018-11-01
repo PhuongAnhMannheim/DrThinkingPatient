@@ -7,7 +7,7 @@ sap.ui.define([
 
 	return Controller.extend("DrThinkingPatient.controller.Register", {
 		onPress: function(oEvent){
-			
+			//do the update for the profile
 			this.getOwnerComponent().getRouter().navTo("home");
 		},
 		handleUploadPress: function(oEvent) {

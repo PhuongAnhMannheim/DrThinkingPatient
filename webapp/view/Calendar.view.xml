@@ -4,7 +4,7 @@
 		xmlns:unified="sap.ui.unified"
 		xmlns="sap.m">
 	<App id="app">
-		<Page title="{i18n>title}" showHeader="true">
+		<Page title="{i18n>title}" showHeader="false">
 			<VBox class="sapUiSmallMargin">
 				<PlanningCalendar
 						id="PC1"

@@ -18,9 +18,9 @@
 							<ToolbarSpacer></ToolbarSpacer>
 							<tnt:ToolHeaderUtilitySeparator />
 							<ToolbarSpacer></ToolbarSpacer>
-							<Text id="Header" text="Dr. Thinking"></Text>
+							<Text id="Header" text="Dr. Thinking - Patient"></Text>
 							<ToolbarSpacer></ToolbarSpacer>
-							<Button text="Omar le Rafik" type="Transparent" press="handleUserNamePress"></Button>
+							<Button text="{userModel>/currentUser}" type="Transparent" press="handleUserNamePress"></Button>
 						</tnt:ToolHeader>
 					</tnt:header>
 				<tnt:sideContent>

@@ -49,11 +49,16 @@ sap.ui.define([
 					console.log(user_profile)
 					 var oModel = new sap.ui.model.json.JSONModel({});
 					 oModel.setProperty("/userprofile", user_profile);
-					 that.getView().setModel(oModel);
+					 that.getView().setModel(oModel, "userProfileModel");
 				}else{
 					MessageToast.show("You have no profile yet!");
 				}
 			});
+		},
+		
+		onListItemPress: function(){
+			var oView = this.getView();
+			MessageToast.show("Scheiße");
 		},
 		
 		onAfterRendering : function () {

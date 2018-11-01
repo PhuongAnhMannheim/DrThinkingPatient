@@ -3,9 +3,8 @@
 		   xmlns:m="sap.m"
 		   xmlns:f="sap.f"
 		   xmlns:l="sap.ui.layout"
-		   controllerName="DrThinkingPatient.controller.DrProfile"
-		   height="100%">
-	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" isChildPage="true" enableLazyLoading="false">
+		   controllerName="DrThinkingPatient.controller.DrProfile">
+	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" isChildPage="true">
 		<headerTitle>
 			<ObjectPageHeader objectImageURI="./img/dr_daniel_thinking.png" objectTitle="DanielThinking" objectImageShape="Circle" objectSubtitle="First Care Physician, Allergist">
 				<actions>

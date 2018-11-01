@@ -1,118 +1,84 @@
-<mvc:View xmlns:l="sap.ui.layout" 
-	xmlns:core="sap.ui.core" 
-	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns="sap.m" 
-	xmlns:tnt="sap.tnt"
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
 	controllerName="DrThinkingPatient.controller.Profile">
 	<App id="app">
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
-				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true"  icon="sap-icon://customer" iconAlt="name"
-					 title="{name}" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
-					markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
-					<attributes>
-						<ObjectAttribute title="Age:{age}" />
-						<ObjectAttribute title="City:{city}" />
-						<ObjectAttribute title="{email}"/>
-						
-					</attributes>
-					<statuses>
-						<ObjectStatus title="Rating" state="Warning" icon="sap-icon://favorite"/>
-					</statuses>
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" title="{name}"
+					titleActive="true" titlePress="handleTitlePress" showMarkers="true" numberState="Success" backgroundDesign="Translucent">
 					<headerContainer>
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://activity-individual">
-				<List  headerText="personal information">
-					<items>
-						<ObjectListItem type="Active" press="onListItemPress">
-							<attributes>
-								<ObjectAttribute text="Name:{userprofile/name}"/>
-								<ObjectAttribute text="Age:{age}"/>
-								<ObjectAttribute text="Date of Birth:{date}"/>
-								<ObjectAttribute text="Nationality:{nationality}"/>
-								<ObjectAttribute text="Email:{email}"/>
-								<ObjectAttribute text="Address:{address/street}"/>
-								<ObjectAttribute text="Zip Code:{address/zip_code}"/>
-								<ObjectAttribute text="Country:{address/country}"/>
-								<ObjectAttribute text="Phone No:{phone}"/>
-								<ObjectAttribute text="Specialty:{insurance/company}"/>
-								<ObjectAttribute text="Specialty:{bloodtype}"/>
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
+									<List headerText="Personal Information">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name : Omar elRafik"/>
+													<ObjectAttribute text="Age : "/>
+													<ObjectAttribute text="Date of Birth : {userProfileModel>/userprofile/birth}"/>
+													<ObjectAttribute text="Nationality : {nationality}"/>
+													<ObjectAttribute text="Email : {userProfileModel>/userprofile/email}"/>
+													<ObjectAttribute text="Address : {userProfileModel>/userprofile/address/street}"/>
+													<ObjectAttribute text="Zip Code : {userProfileModel>/userprofile/address/zip_code}"/>
+													<ObjectAttribute text="Country : {userProfileModel>/userprofile/address/country}"/>
+													<ObjectAttribute text="Phone No : {userProfileModel>/userprofile/phone}"/>
+													<ObjectAttribute text="Insurance Company : {userProfileModel>/userprofile/insurance/company}"/>
+													<ObjectAttribute text="Blood Typ : {userProfileModel>/userprofile/bloodtype}"/>
+												</attributes>
+											</ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://stethoscope" >
-									<List items="{/p_info}" headerText="Allergies">
-					<items>
-						<ObjectListItem type="Active" press="onListItemPress">
-							<attributes>
-								<ObjectAttribute text="{Allergies1}"/>
-								<ObjectAttribute text="{Allergies2}"/>
-								<ObjectAttribute text="{Allergies3}"/>	
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
+								<IconTabFilter icon="sap-icon://stethoscope">
+									<List items="{userProfileModel>/userprofile/allergies}" headerText="Allergies">
+										<items>
+											<ObjectListItem id="fObject" title="{/}" press="onListItemPress"></ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://newspaper" >
-									<List items="{/p_info}" headerText="Medical history">
-					<items>
-						<ObjectListItem type="Active" press="onListItemPress">
-							<attributes>
-								<ObjectAttribute text="{Medical1}"/>
-								<ObjectAttribute text="{Medical2}"/>
-							
-								
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
+								<IconTabFilter icon="sap-icon://newspaper">
+									<List items="{userProfileModel>/userprofile/allergies}" headerText="Medical history">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="/date}, {/description}"/>
+												</attributes>
+											</ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
-							
-								<IconTabFilter icon="sap-icon://contacts" >
+								<IconTabFilter icon="sap-icon://contacts">
 									<List items="{/p_info}" headerText="Habits and Hobbies">
-					<items>
-						<ObjectListItem type="Active" press="onListItemPress">
-							<attributes>
-								<ObjectAttribute text="{Habits1}"/>
-								<ObjectAttribute text="{Habits2}"/>
-							<ObjectAttribute text="{Habits3}"/>
-								<ObjectAttribute text="{Habits4}"/>
-								<ObjectAttribute text="{Habits5}"/>
-						
-								
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="{Habits1}"/>
+													<ObjectAttribute text="{Habits2}"/>
+													<ObjectAttribute text="{Habits3}"/>
+													<ObjectAttribute text="{Habits4}"/>
+													<ObjectAttribute text="{Habits5}"/>
+												</attributes>
+											</ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
-								
 								<IconTabFilter icon="sap-icon://credit-card">
 									<List items="{/p_info}" headerText="Bank details">
-					<items>
-						<ObjectListItem type="Active" press="onListItemPress">
-							<attributes>
-								<ObjectAttribute text="IBAN:{IBAN}"/>
-								<ObjectAttribute text="BIC:{BIC}"/>
-								<ObjectAttribute text="PayPal:{PayPal}"/>
-								
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="IBAN:{IBAN}"/>
+													<ObjectAttribute text="BIC:{BIC}"/>
+													<ObjectAttribute text="PayPal:{PayPal}"/>
+												</attributes>
+											</ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
 							</items>
 						</IconTabBar>
 					</headerContainer>
 				</ObjectHeader>
-				
-				
-				<!--	<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
-					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >-->
-				<!--	</l:content>
-				</l:VerticalLayout>-->
 			</content>
 		</Page>
 	</App>

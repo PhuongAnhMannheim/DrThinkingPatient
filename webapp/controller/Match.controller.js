@@ -11,7 +11,7 @@ sap.ui.define([
 		onPressDoctorProfile: function(){
 			/*this.getOwnerComponent().getRouter().navTo("drprofile");*/
 			var sKey = "drprofile";
-			for (var i=3; i<7; i++){
+			for (var i=2; i<7; i++){
 				var viewId = "__xmlview"+i;
 				if(sap.ui.getCore().byId(viewId + "--pageContainer") != undefined){
 					sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
@@ -21,7 +21,7 @@ sap.ui.define([
 		onPressChat:function(oEvent){
 			/*this.getOwnerComponent().getRouter().navTo("chatroom");*/
 			var sKey = "chatroom";
-			for (var i=3; i<7; i++){
+			for (var i=2; i<7; i++){
 				var viewId = "__xmlview"+i;
 				if(sap.ui.getCore().byId(viewId + "--pageContainer") != undefined){
 					sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);

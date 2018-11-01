@@ -45,7 +45,7 @@ sap.ui.define([
 		_onSent: function(){
 			/*this.getOwnerComponent().getRouter().navTo("match");*/
 			var sKey = "match";
-			for (var i=3; i<7; i++){
+			for (var i=2; i<7; i++){
 				var viewId = "__xmlview"+i;
 				if(sap.ui.getCore().byId(viewId + "--pageContainer") != undefined){
 					sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
