@@ -1,6 +1,12 @@
 {
 	"EntryCollection" : [
-		
+		{
+		"Author" : "Omar",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+		"Type" : "Reply",
+		"Date" : "Nov 1 2018, 6:02:57 PM",
+		"Text" : "Hi ,I feel bad now! "
+	},
 	
 		 {
 		"Author" : "Your Dr.Thinking Team",
