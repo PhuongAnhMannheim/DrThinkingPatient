@@ -1,11 +1,11 @@
 {
 	"EntryCollection" : [
 		 {
-		"Author" : "Daniel Thinking",
+		"Author" : "Your Dr.Thinking Team",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
-		"Type" : "Reply",
-		"Date" : "Oct 19 2018, 1:03:37 PM",
-		"Text" : "okay, it is not a big deal, you dont need to make an appointment, just have a rest"
+		"Type" : "Request",
+		"Date" : "Oct 19 2018",
+		"Text" : "Omar and Dr. Daniel Thinking. Please feel free to use this channel to communicate privately with each other."
 	}
 	
 ]
