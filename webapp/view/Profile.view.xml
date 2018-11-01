@@ -9,14 +9,16 @@
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://activity-individual">
+									<Button text="testbutton" press="onTestButton"/>
+
 									<List headerText="Personal Information">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="Name : Omar elRafik"/>
-													<ObjectAttribute text="Age : "/>
+													<ObjectAttribute text="Name : {userProfileModel>/userprofile/name}"/>
+													<ObjectAttribute text="Age : {userProfileModel>/userprofile/age}"/>
 													<ObjectAttribute text="Date of Birth : {userProfileModel>/userprofile/birth}"/>
-													<ObjectAttribute text="Nationality : {nationality}"/>
+													<ObjectAttribute text="Nationality : {userProfileModel>/userprofile/nationality}"/>
 													<ObjectAttribute text="Email : {userProfileModel>/userprofile/email}"/>
 													<ObjectAttribute text="Address : {userProfileModel>/userprofile/address/street}"/>
 													<ObjectAttribute text="Zip Code : {userProfileModel>/userprofile/address/zip_code}"/>
@@ -30,21 +32,18 @@
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://stethoscope">
-									<List items="{userProfileModel>/userprofile/allergies}" headerText="Allergies">
+									<List id="medHistList" items="{userProfileModel>/userprofile/allergies}" headerText="Allergies">
 										<items>
-											<ObjectListItem id="fObject" title="{/}" press="onListItemPress"></ObjectListItem>
+											<ObjectListItem id="fObject" title="" press="onListItemPress"></ObjectListItem>
 										</items>
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://newspaper">
-									<List items="{userProfileModel>/userprofile/allergies}" headerText="Medical history">
-										<items>
-											<ObjectListItem type="Active" press="onListItemPress">
-												<attributes>
-													<ObjectAttribute text="/date}, {/description}"/>
-												</attributes>
-											</ObjectListItem>
-										</items>
+									<List items="{path: 'userProfileModel>/userprofile/med_history'}" headerText="Medical history">
+									
+											<StandardListItem type="Active" press="onListMedHistPress" description="{date}, {description}">
+											</StandardListItem>
+										
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://contacts">

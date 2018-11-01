@@ -33,6 +33,7 @@ sap.ui.define([
 		handleTitlePress : function (oEvent) {
 			var domRef = oEvent.getParameter("domRef");
 			this._getPopover().openBy(domRef);
+			
 		},
 		
 		onBeforeRendering : function () {
@@ -50,6 +51,7 @@ sap.ui.define([
 					 var oModel = new sap.ui.model.json.JSONModel({});
 					 oModel.setProperty("/userprofile", user_profile);
 					 that.getView().setModel(oModel, "userProfileModel");
+					 console.log(user_profile['med_history']);
 				}else{
 					MessageToast.show("You have no profile yet!");
 				}
@@ -61,8 +63,20 @@ sap.ui.define([
 			MessageToast.show("Scheiße");
 		},
 		
-		onAfterRendering : function () {
-				
+		onListMedHistPress: function(){
+			console.log(user_profile);
+			var profile = user_profile;
+		},
+		
+		onTestButton: function(){
+		MessageToast.show("title press");
+			var profile = user_profile;
+			var med_list = this.getView().byId("medHistList");
+			var profile_history = profile['med_history'];
+			//console.log("OnAfterRendering"+profile_history[0].date);
+			med_list.setModel(profile_history);
+			med_list.bindItems("/", new sap.m.StandardListItem({title:"{date}, {description}"}));	
 		}
+		
 	});
 });
