@@ -3,6 +3,27 @@
 	<App id="app">
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
+					<NotificationListGroup
+						title="Requests"
+						showCloseButton="true">
+							<items>
+							<NotificationListItem
+								title="Patient Request"
+								description="Omar el Rafik sent you a request for an appointment."
+								showCloseButton="true"
+								datetime="1s"
+								unread="true"
+								priority="High"
+								close="onItemClose"
+								press="onListItemPress">
+							<buttons>
+								<Button text="Accept" type="Accept" press="onAcceptPress"/>
+								<Button text="Reject" type="Reject" press="onRejectPress"/>
+							</buttons>
+						</NotificationListItem>
+						</items>
+					
+				</NotificationListGroup>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" title="{name}"
 					titleActive="true" titlePress="handleTitlePress" showMarkers="true" numberState="Success" backgroundDesign="Translucent">
 					<headerContainer>
@@ -13,10 +34,10 @@
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="Name : Omar elRafik"/>
-													<ObjectAttribute text="Age : "/>
+													<ObjectAttribute text="Name : {userProfileModel>/userprofile/name}"/>
+													<ObjectAttribute text="Age : {userProfileModel>/userprofile/age}"/>
 													<ObjectAttribute text="Date of Birth : {userProfileModel>/userprofile/birth}"/>
-													<ObjectAttribute text="Nationality : {nationality}"/>
+													<ObjectAttribute text="Nationality : {userProfileModel>/userprofile/nationality}"/>
 													<ObjectAttribute text="Email : {userProfileModel>/userprofile/email}"/>
 													<ObjectAttribute text="Address : {userProfileModel>/userprofile/address/street}"/>
 													<ObjectAttribute text="Zip Code : {userProfileModel>/userprofile/address/zip_code}"/>
@@ -30,46 +51,45 @@
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://stethoscope">
-									<List items="{userProfileModel>/userprofile/allergies}" headerText="Allergies">
+									<List headerText="Allergies">
 										<items>
-											<ObjectListItem id="fObject" title="{/}" press="onListItemPress"></ObjectListItem>
+											<ObjectListItem id="fObject" title="" press="onListItemPress"></ObjectListItem>
 										</items>
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://newspaper">
-									<List items="{userProfileModel>/userprofile/allergies}" headerText="Medical history">
+									<List headerText="Medical history">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="/date}, {/description}"/>
+													<ObjectAttribute title= "1/12/2018" text="Gall Bladder removal"/>
+													<ObjectAttribute title= "12/11/2016" text="Kidney stone removal"/>
 												</attributes>
 											</ObjectListItem>
 										</items>
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://contacts">
-									<List items="{/p_info}" headerText="Habits and Hobbies">
+									<List headerText="Habits and Hobbies">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="{Habits1}"/>
-													<ObjectAttribute text="{Habits2}"/>
-													<ObjectAttribute text="{Habits3}"/>
-													<ObjectAttribute text="{Habits4}"/>
-													<ObjectAttribute text="{Habits5}"/>
+													<ObjectAttribute text="Smoking"/>
+													<ObjectAttribute text="Reading"/>
+													<ObjectAttribute text="Yoga"/>
 												</attributes>
 											</ObjectListItem>
 										</items>
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://credit-card">
-									<List items="{/p_info}" headerText="Bank details">
+									<List headerText="Bank details">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
-													<ObjectAttribute text="IBAN:{IBAN}"/>
-													<ObjectAttribute text="BIC:{BIC}"/>
-													<ObjectAttribute text="PayPal:{PayPal}"/>
+													<ObjectAttribute text="IBAN:DE123345567"/>
+													<ObjectAttribute text="BIC:12354"/>
+													<ObjectAttribute text="PayPal:Omarelrafik @yahoo.com"/>
 												</attributes>
 											</ObjectListItem>
 										</items>
