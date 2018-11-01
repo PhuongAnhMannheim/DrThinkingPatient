@@ -3,7 +3,7 @@
 	<App id="app">
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
-				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" title="{name}"
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" title="Omar ElRafik"
 					titleActive="true" titlePress="handleTitlePress" showMarkers="true" numberState="Success" backgroundDesign="Translucent">
 					<headerContainer>
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
