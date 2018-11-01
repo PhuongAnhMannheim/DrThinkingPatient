@@ -3,27 +3,6 @@
 	<App id="app">
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
-				<NotificationListGroup
-						title="Requests"
-						showCloseButton="true">
-							<items>
-							<NotificationListItem
-								title="Patient Request"
-								description="Omar el Rafik sent you a request for an appointment."
-								showCloseButton="true"
-								datetime="1s"
-								unread="true"
-								priority="High"
-								close="onItemClose"
-								press="onListItemPress">
-							<buttons>
-								<Button text="Accept" type="Accept" press="onAcceptPress"/>
-								<Button text="Reject" type="Reject" press="onRejectPress"/>
-							</buttons>
-						</NotificationListItem>
-						</items>
-					
-				</NotificationListGroup>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" title="{name}"
 					titleActive="true" titlePress="handleTitlePress" showMarkers="true" numberState="Success" backgroundDesign="Translucent">
 					<headerContainer>
