@@ -13,11 +13,7 @@ You need to create a trial account to access it.
 
 2. Log In with your credentials to the IDE.
 
-3a. If you want to run this yourself: In the home menu of the IDE you can go to 'Clone from Git Repository'.
-
-3b. If you want to use the already deployed version, here is the link:
-
-https://drthinkingpatient-agsdev.dispatcher.hana.ondemand.com
+3. If you want to run this yourself: In the home menu of the IDE you can go to 'Clone from Git Repository'.
 
 4. Insert the git project URL for HTTPS.
 
